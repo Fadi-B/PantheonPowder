@@ -30,6 +30,11 @@ rm -Rf pantheon-tunnel/
 git clone https://github.com/j0lama/pantheon.git
 cd pantheon
 tools/fetch_submodules.sh
+
+#This ensures that we use the most up-to-date third party repositories
+git submodule update --remote --merge
+
+#Installing dependencies and setting up schemes
 src/experiments/setup.py --install-deps --schemes "bbr copa cubic fillp fillp_sheep ledbat pcc pcc_experimental quic scream sprout taova vegas verus vivace webrtc"
 src/experiments/setup.py --setup --schemes "bbr copa cubic fillp fillp_sheep ledbat pcc pcc_experimental quic scream sprout taova vegas verus vivace webrtc"
 
