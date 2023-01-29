@@ -21,9 +21,6 @@ chmod -R 755 third_party/sprout-sewma/
 chmod -R 755 third_party/sprout-oracle/
 chmod -R 755 third_party/sprout-fadi/
 
-cd ..
-cd ..
-
 #Might want to consider downloading this package in the actual setup pantheon script
 #Note: Eigen is header based and so there is no need to compile anything
 
@@ -33,5 +30,6 @@ cd third_party/sprout-fadi/src/extern_utils
 wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar
 tar -xvf eigen-3.3.9.tar
 
+cd ../../../../
 
 src/experiments/setup.py --schemes "cubic sprout vivace verus copa"
