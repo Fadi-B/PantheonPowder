@@ -2,7 +2,7 @@ cd pantheon/
 
 var=$(cat ../traces.txt)
 
-CC_SCHEMES="bbr copa cubic fillp fillp_sheep indigo ledbat pcc pcc_experimental sprout taova vegas verus vivace"
+CC_SCHEMES="bbr copa cubic fillp fillp_sheep indigo ledbat pcc pcc_experimental sprout taova vegas verus vivace sprout-ewma sprout-fadi sprout-0 sprout-5 sprout-25 sprout-50 sprout-75"
 
 TIME=30
 RUNS=1
