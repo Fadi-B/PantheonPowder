@@ -1,6 +1,6 @@
 cd pantheon/
 
-var=$(cat traces.txt)
+var=$(cat ../traces.txt)
 
 CC_SCHEMES="bbr copa cubic fillp fillp_sheep indigo ledbat pcc pcc_experimental sprout taova vegas verus vivace"
 
