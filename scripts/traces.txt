@@ -1,0 +1,5 @@
+TMobile-UMTS
+TMobile-LTE
+ATT-LTE
+Verizon-LTE
+Verizon-EVDO
