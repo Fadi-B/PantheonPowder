@@ -47,4 +47,28 @@ tar -xvf eigen-3.3.9.tar
 
 cd ../../../../
 
+#Setup the schemes you want, but will be done later on as well
 src/experiments/setup.py --schemes "cubic sprout vivace verus copa"
+
+#Move back from pantheon dir
+cd ..
+
+### Will need most recent cmake version ###
+
+sudo apt remove cmake #Uninstall current version
+
+# Solve broken apt_pkg package
+cd /usr/lib/python3/dist-packages/
+sudo ln -s apt_pkg.cpython-36m-x86_64-linux-gnu.so apt_pkg.so
+
+bash install_kitware_repo
+
+sudo apt-get install cmake
+
+### Install Frugally-Deep - Will allow us to port models to C++ ###
+
+bash install_frugally_deep
+
+
+
+
