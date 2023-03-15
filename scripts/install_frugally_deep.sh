@@ -20,7 +20,7 @@ cmake -DJSON_BuildTests=OFF ..
 make && sudo make install
 cd ../..
 
-git clone https://github.com/Dobiasd/frugally-deep
+git clone https://github.com/Fadi-B/frugally-deep.git
 cd frugally-deep
 mkdir -p build && cd build
 cmake ..
