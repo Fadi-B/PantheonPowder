@@ -64,13 +64,13 @@ sudo ln -s apt_pkg.cpython-36m-x86_64-linux-gnu.so apt_pkg.so
 # Go back to main directory
 cd /local/repository/scripts/
 
-bash install_kitware_repo
+sudo bash install_kitware_repo.sh
 
 sudo apt-get install cmake
 
 ### Install Frugally-Deep - Will allow us to port models to C++ ###
 
-bash install_frugally_deep
+sudo bash install_frugally_deep.sh
 
 
 
