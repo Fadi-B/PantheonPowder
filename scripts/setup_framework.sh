@@ -61,6 +61,9 @@ sudo apt remove cmake #Uninstall current version
 cd /usr/lib/python3/dist-packages/
 sudo ln -s apt_pkg.cpython-36m-x86_64-linux-gnu.so apt_pkg.so
 
+# Go back to main directory
+cd /local/repository/scripts/
+
 bash install_kitware_repo
 
 sudo apt-get install cmake
